@@ -1,0 +1,29 @@
+<div class="body"></div>
+    <div class="container form">
+       <div class="logo">
+        <img src="/assets/Images/Gemini_Generated_Image_wxzts5wxzts5wxzt-removebg-preview.png" alt="">
+        <h2>Winged Word</h2>
+       </div>
+        <form  action="" [formGroup]="form">
+            <div class="input-group mb-3">
+                <div class="form-floating">
+                  <input formControlName="username" type="text" class="form-control" id="floatingInputGroup1" placeholder="Username">
+                  <label for="floatingInputGroup1" style="font-weight: bolder;"><i class="bi bi-person"></i>&nbsp;Username</label>
+                </div>
+              </div>
+    
+              <div class="input-group mb-3">
+                <div class="form-floating">
+                  <input formControlName="password" type="password" class="form-control" id="floatingInputGroup1" placeholder="Username">
+                  <label for="floatingInputGroup1" style="font-weight: bolder;"><i class="bi bi-lock"></i>&nbsp;Password</label>
+                </div>
+              </div>
+    
+              <div class="butt">
+                <button type="submit" (click)="login(form)" class="btn">Log in</button>
+              </div>
+            </form>
+            <p style="color: white;">Don't have an Account? &nbsp; <a href="/create">Create Account</a></p>
+        
+    </div>
+    

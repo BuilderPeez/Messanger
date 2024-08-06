@@ -1,0 +1,41 @@
+<!-- <img src="/assets/Images/light-dark-brainstorm-3840x2160-v0-26vc0u0l076b1.png" alt=""> -->
+<div class="form">
+    <form action="" [formGroup]="form">
+        <h2>Create Account</h2>
+        
+        <div class="round-image" *ngIf="selectedImage">
+            <img [src]="selectedImage" alt="Selected Image">
+            <div title="Upload Image" class="plus-sign" (click)="imgFile.click()">+</div>
+            </div>
+      
+        <div class="form-floating mb-3">
+            <input style="margin-top: -70px;" type="text" formControlName="firstName" class="form-control" id="floatingInput" placeholder="First Name">
+            <label for="floatingInput">First Name</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" formControlName="lastName" class="form-control" id="floatingInput" placeholder="Last Name">
+            <label for="floatingInput">Last Name</label>
+          </div>
+        <div class="form-floating mb-3">
+            <input type="text" formControlName="phoneNumber" class="form-control" id="floatingInput" placeholder="Phone Number">
+            <label for="floatingInput">Phone Number</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" formControlName="email" class="form-control" id="floatingInput" placeholder="Email">
+            <label for="floatingInput">Email</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" formControlName="username" class="form-control" id="floatingInput" placeholder="Username">
+            <label for="floatingInput">Username</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="password" formControlName="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+          </div>
+
+          <input formControlName="image" type="file" #imgFile class="d-none" (change)="onFileSelected($event)">
+
+          <button type="submit" (click)="create()" class="btn">Create Account</button>
+        
+    </form>
+</div>

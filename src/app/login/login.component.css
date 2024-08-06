@@ -1,0 +1,98 @@
+
+
+
+
+.body{
+    background: url(/assets/Images/amadej-tauses-xWOTojs1eg4-unsplash.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(.4);
+}
+.form{
+    border: none;
+    width: 50%;
+    height: 0;
+    position: relative;
+    top: 150px;
+    border-radius: 10px;
+    position:relative ;
+    top: -80vh;
+    bottom: 0;
+    color: white;
+}
+.form img{
+    height: 100px;
+    /* margin-left: 50px; */
+}
+.form h2 {
+    
+        font-family: "Pacifico", cursive;
+        font-weight: 600;
+        font-style: normal;
+        color: white;
+      
+      
+}
+.form input {
+    background: none;
+    color: white;
+    font-weight: bold;
+    outline: none !important;
+    width: 70%;
+    margin-left: 15%;
+    box-shadow: none !important;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+.form label{
+    opacity: 1;
+    margin-left: 15%;
+    background: none;
+    /* color: navajowhite; */
+    margin-top: 20px;
+
+    
+}
+.form input :focus{
+    color: black;
+    outline: none !important;
+    box-shadow: none !important;
+}
+.form-control{
+    color: black;
+}
+.logo {
+    position: relative;
+    top: -60px;
+    
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+.butt button{
+    color: white;
+    font-weight: bold;
+    background-color: grey;
+    width: 70%;
+    margin-left: 15%;
+    border-radius: 50px;
+    margin-top: 20px;
+    height: 7vh;
+}
+a{
+    font-size: larger !important;
+    /* position: relative;
+    left: 20%; */
+    text-decoration: none;
+    bottom: 60% !important;
+    
+    
+}
+p{
+    text-align: center;
+    /* position: relative;
+    right: 20%; */
+    margin-top: 30px;
+    width: 100%;
+}
